@@ -4,6 +4,8 @@
 
 namespace app\api\controller;
 
+use app\lib\token\Token;
+
 /**
  * Class Auth
  * @doc('授权类')
@@ -22,6 +24,18 @@ class Auth
      */
     public function create()
     {
-        return json(['auth_token'=>'ascasfmascojasj dfk sj2qiwrye21ud j xcv cf2b   bMZb'],200);
+        return json(Token::get('100',request()->param('name')),200);
+    }
+
+    /**
+     * @doc('创建授权')
+     * @route('','put')
+     * @param('name','名称','require')
+     * @param('password','密码','require')
+     * @return \think\response\Json
+     */
+    public function refresh()
+    {
+
     }
 }

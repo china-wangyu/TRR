@@ -15,10 +15,22 @@ use think\facade\Request;
 
 class Token
 {
-    public static function getToken($user)
+    /**
+     * @var string $key 用户KEY
+     */
+    protected static $key = 'SDJxjkxc9o';
+
+
+    /**
+     * 获取 TOKEN
+     * @param int $uuid
+     * @param string $signature
+     * @return array
+     */
+    public static function get(int $uuid, string $signature)
     {
-        $accessToken = self::createAccessToken($user);
-        $refreshToken = self::createRefreshToken($user);
+        $accessToken = self::createAccess($uuid, $signature);
+        $refreshToken = self::createRefresh($uuid, $signature);
         return [
             'access_token' => $accessToken,
             'refresh_token' => $refreshToken
@@ -26,46 +38,53 @@ class Token
     }
 
     /**
+     * 刷新 TOKEN
      * @return array
      * @throws Exception
      * @throws TokenException
      */
-    public static function refreshToken()
+    public static function refresh()
     {
-        $user = [
-            'id' => self::getCurrentUID(),
-            'nickname' => self::getCurrentName()
-        ];
-        $accessToken = self::createAccessToken($user);
-
+        $accessToken = self::createAccess(self::getCurrentUID(),self::getCurrentName());
         return [
             'access_token' => $accessToken,
         ];
     }
 
-    private static function createAccessToken($user)
+    /**
+     * 创建 TOKEN 授权
+     * @param int $uuid
+     * @param string $signature
+     * @return string
+     */
+    private static function createAccess(int $uuid, string $signature)
     {
-        $key = config('secure.token_salt');
+        $key = static::$key;
         $payload = [
             'iss' => 'TRR', //签发者
             'iat' => time(), //什么时候签发的
             'exp' => time() + 7200, //过期时间
-            'uid' => $user['id'],
-            'nickname' => $user['nickname']
+            'uuid' => $uuid,
+            'signature' => $signature
         ];
         $token = JWT::encode($payload, $key);
         return $token;
-
     }
 
-    private static function createRefreshToken($user)
+    /**
+     * 创建刷新TOKEN授权
+     * @param int $uuid
+     * @param string $signature
+     * @return string
+     */
+    private static function createRefresh(int $uuid, string $signature)
     {
-        $key = config('secure.token_salt');
+        $key = static::$key;
         $payload = [
             'iss' => 'TRR', //签发者
             'iat' => time(), //什么时候签发的
-            'uid' => $user['id'],
-            'nickname' => $user['nickname']
+            'uuid' => $uuid,
+            'signature' => $signature
         ];
         $token = JWT::encode($payload, $key);
         return $token;
@@ -89,7 +108,7 @@ class Token
      */
     public static function getCurrentName()
     {
-        $uid = self::getCurrentTokenVar('nickname');
+        $uid = self::getCurrentTokenVar('signature');
         return $uid;
     }
 
@@ -115,7 +134,7 @@ class Token
             throw new TokenException(['message' => '尝试获取的authorization信息不存在']);
         }
 
-        $secretKey = config('secure.token_salt');
+        $secretKey = static::$key;
 
         try {
             $jwt = (array)JWT::decode($token, $secretKey, ['HS256']);
