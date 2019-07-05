@@ -164,16 +164,16 @@
         },
         {
             "name": "wangyu/reflex-core",
-            "version": "0.0.4",
+            "version": "0.0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/china-wangyu/php-reflex-core.git",
-                "reference": "6c04872fd67713be03d05fdbc4a1e81048603a8d"
+                "reference": "9473504bbbd149aac141dfd2607852d5d2b7460f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/china-wangyu/php-reflex-core/zipball/6c04872fd67713be03d05fdbc4a1e81048603a8d",
-                "reference": "6c04872fd67713be03d05fdbc4a1e81048603a8d",
+                "url": "https://api.github.com/repos/china-wangyu/php-reflex-core/zipball/9473504bbbd149aac141dfd2607852d5d2b7460f",
+                "reference": "9473504bbbd149aac141dfd2607852d5d2b7460f",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -202,7 +202,7 @@
                 }
             ],
             "description": "原生PHP的reflex反射注释模型composer扩展",
-            "time": "2019-06-04T03:23:55+00:00"
+            "time": "2019-07-03T11:20:30+00:00"
         },
         {
             "name": "wangyu/tp-doc",
@@ -210,12 +210,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/china-wangyu/tp-doc.git",
-                "reference": "207f0507f514cf0b3e3646163e25bef0f62695bd"
+                "reference": "687158824d39e4889b130f8e62585451a6ce660e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/china-wangyu/tp-doc/zipball/207f0507f514cf0b3e3646163e25bef0f62695bd",
-                "reference": "207f0507f514cf0b3e3646163e25bef0f62695bd",
+                "url": "https://api.github.com/repos/china-wangyu/tp-doc/zipball/687158824d39e4889b130f8e62585451a6ce660e",
+                "reference": "687158824d39e4889b130f8e62585451a6ce660e",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -246,7 +246,7 @@
                 }
             ],
             "description": "基于ThinkPHP5.1做的API文档模型composer扩展",
-            "time": "2019-07-03T09:08:50+00:00"
+            "time": "2019-07-05T17:09:30+00:00"
         },
         {
             "name": "wangyu/tp-exception",

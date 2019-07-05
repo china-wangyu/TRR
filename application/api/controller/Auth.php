@@ -1,7 +1,6 @@
 <?php
 /** Created By china_wangyu@aliyun.com, Data: 2019/7/3 */
 
-
 namespace app\api\controller;
 
 use app\lib\token\Token;
@@ -24,7 +23,7 @@ class Auth
      */
     public function create()
     {
-        return json(Token::get('100',request()->param('name')),200);
+        return json(Token::get('100', request()->param('name')), 200);
     }
 
     /**
@@ -36,6 +35,5 @@ class Auth
      */
     public function refresh()
     {
-
     }
 }
