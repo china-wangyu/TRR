@@ -12,4 +12,11 @@ class Index
     {
         return 'hello,' . $name;
     }
+
+    // 创建 API Markdown 文档
+    public function build()
+    {
+        $doc = new \WangYu\Doc('api 模块','生成的API文档名称');
+        $doc->execute();
+    }
 }

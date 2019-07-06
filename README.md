@@ -1,180 +1,237 @@
-![](https://box.kancloud.cn/5a0aaa69a5ff42657b5c4715f3d49221) 
+<h1 align="center">
+  <a href="https://github.com/china-wangyu/TRR">
+   <!-- <img src="http://doc.cms.7yue.pro/left-logo.png" width="250"/> -->
+  </a>
+  <br>
+  TRR
+</h1>
 
-ThinkPHP 5.1（LTS版本） —— 12载初心，你值得信赖的PHP框架
-===============
+<p align="center">
+  <img src="https://img.shields.io/badge/PHP-%3E%3D7.1-blue.svg" alt="php version" data-canonical-src="https://img.shields.io/badge/PHP-%3E%3D7.1-blue.svg" style="max-width:100%;"></a>
+  <a href="https://www.kancloud.cn/manual/thinkphp5_1/353946" rel="nofollow"><img src="https://img.shields.io/badge/ThinkPHP-5.1.*-green.svg" alt="ThinkPHP version" data-canonical-src="https://img.shields.io/badge/ThinkPHP-5.1.*-green.svg" style="max-width:100%;"></a>
+  <img src="https://img.shields.io/badge/license-license--2.0-lightgrey.svg" alt="LISENCE" data-canonical-src="https://img.shields.io/badge/license-license--2.0-lightgrey.svg" style="max-width:100%;"></a>
+</p>
 
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/top-think/framework/badges/quality-score.png?b=5.1)](https://scrutinizer-ci.com/g/top-think/framework/?branch=5.1)
-[![Build Status](https://travis-ci.org/top-think/framework.svg?branch=master)](https://travis-ci.org/top-think/framework)
-[![Total Downloads](https://poser.pugx.org/topthink/framework/downloads)](https://packagist.org/packages/topthink/framework)
-[![Latest Stable Version](https://poser.pugx.org/topthink/framework/v/stable)](https://packagist.org/packages/topthink/framework)
-[![PHP Version](https://img.shields.io/badge/php-%3E%3D5.6-8892BF.svg)](http://www.php.net/)
-[![License](https://poser.pugx.org/topthink/framework/license)](https://packagist.org/packages/topthink/framework)
+# 简介
 
-ThinkPHP5.1对底层架构做了进一步的改进，减少依赖，其主要特性包括：
+## TRR 是什么？
 
- + 采用容器统一管理对象
- + 支持Facade
- + 注解路由支持
- + 路由跨域请求支持
- + 配置和路由目录独立
- + 取消系统常量
- + 助手函数增强
- + 类库别名机制
- + 增加条件查询
- + 改进查询机制
- + 配置采用二级
- + 依赖注入完善
- + 支持`PSR-3`日志规范
- + 中间件支持（V5.1.6+）
- + Swoole/Workerman支持（V5.1.18+）
+TRR 是 ThinkPHP51 Reflection Restful API（注：API设计风格） 的字母第一个字符大写后拼接而来，
+从ThinkPHP51 Reflex Restful API全称可以看出来，
+这套接口框架设计主要围绕反射来做Restful API接口设计的。
 
+## TRR 可以做什么？
 
-> ThinkPHP5的运行环境要求PHP5.6以上。
+1. 你可以先了解一下`ThinkPHP5.1`能做什么。
+2. `ThinkPHP5.1` 能做的都能做，而且在反射路由方面，我们比`ThinkPHP5.1`更为专注
 
-## 安装
+专注做什么:
 
-使用composer安装
+* 反射 API 接口路由
+* 反射 API 接口文档生成
+* 反射 API 参数快速验证
+* 让接口开发更简单、直观、迅捷
+* 让接口维护更轻松、明了、快速
 
-~~~
-composer create-project topthink/think tp
-~~~
+我们专注研究PHP反射相关的知识点，想让`PHP` `web`功能开发、接口开发更加简单、迅捷。
 
-启动服务
-
-~~~
-cd tp
-php think run
-~~~
-
-然后就可以在浏览器中访问
-
-~~~
-http://localhost:8000
-~~~
-
-更新框架
-~~~
-composer update topthink/framework
-~~~
+想让更多的朋友更加专注于业务开发，不再反复去做路由添加、修改，接口文档编写等一些列的问题
+ 
+我们只想你的项目更快、更稳定、更以维护的成型。
 
 
-## 在线手册
+## 使用须知
 
-+ [完全开发手册](https://www.kancloud.cn/manual/thinkphp5_1/content)
-+ [升级指导](https://www.kancloud.cn/manual/thinkphp5_1/354155) 
+在使用TRR时必定会用到的技能，你得做一个评估，查看自己是否可以无障碍使用。
 
-## 目录结构
+### 涉及技术或框架
 
-初始的目录结构如下：
+* ` PHP7.1 ` 一种支持热编译的脚本语言
 
-~~~
-www  WEB部署目录（或者子目录）
-├─application           应用目录
-│  ├─common             公共模块目录（可以更改）
-│  ├─module_name        模块目录
-│  │  ├─common.php      模块函数文件
-│  │  ├─controller      控制器目录
-│  │  ├─model           模型目录
-│  │  ├─view            视图目录
-│  │  └─ ...            更多类库目录
-│  │
-│  ├─command.php        命令行定义文件
-│  ├─common.php         公共函数文件
-│  └─tags.php           应用行为扩展定义文件
-│
-├─config                应用配置目录
-│  ├─module_name        模块配置目录
-│  │  ├─database.php    数据库配置
-│  │  ├─cache           缓存配置
-│  │  └─ ...            
-│  │
-│  ├─app.php            应用配置
-│  ├─cache.php          缓存配置
-│  ├─cookie.php         Cookie配置
-│  ├─database.php       数据库配置
-│  ├─log.php            日志配置
-│  ├─session.php        Session配置
-│  ├─template.php       模板引擎配置
-│  └─trace.php          Trace配置
-│
-├─route                 路由定义目录
-│  ├─route.php          路由定义
-│  └─...                更多
-│
-├─public                WEB目录（对外访问目录）
-│  ├─index.php          入口文件
-│  ├─router.php         快速测试文件
-│  └─.htaccess          用于apache的重写
-│
-├─thinkphp              框架系统目录
-│  ├─lang               语言文件目录
-│  ├─library            框架类库目录
-│  │  ├─think           Think类库包目录
-│  │  └─traits          系统Trait目录
-│  │
-│  ├─tpl                系统模板目录
-│  ├─base.php           基础定义文件
-│  ├─console.php        控制台入口文件
-│  ├─convention.php     框架惯例配置文件
-│  ├─helper.php         助手函数文件
-│  ├─phpunit.xml        phpunit配置文件
-│  └─start.php          框架入口文件
-│
-├─extend                扩展类库目录
-├─runtime               应用的运行时目录（可写，可定制）
-├─vendor                第三方类库目录（Composer依赖库）
-├─build.php             自动生成定义文件（参考）
-├─composer.json         composer 定义文件
-├─LICENSE.txt           授权说明文件
-├─README.md             README 文件
-├─think                 命令行入口文件
-~~~
+    你需要熟练掌握` PHP7.1 `相关知识点，如果你精通此技能那就再好不过了，不精通也没关系，请根据我收集的教程和资料进行学习
+    
+    - `PHP` 官方文档: [https://php.net/manual/zh/](https://php.net/manual/zh/)
+    - 【极客学院】PHP全套教学视频: [https://www.bilibili.com/video/av10274152?from=search&seid=2228250606023131784](https://www.bilibili.com/video/av10274152?from=search&seid=2228250606023131784)
+    - 韩顺平php从入门到精通:  https://pan.baidu.com/s/1YDQoLodysxCP4rAyyTgD_Q 提取码: 6hyy
+    
+     
+* `ThinkPHP5.1` ：中国比较流行且会一直流行的PHP框架
+    
+    如果你对`ThinkPHP5.1`不太了解，或者一知半解，请到官方文档进行查阅，补充效果知识点。
+    [官方文档](https://www.kancloud.cn/manual/thinkphp5_1/content)
+* `Reflection` PHP 反射机制
 
-> 可以使用php自带webserver快速测试
-> 切换到根目录后，启动命令：php think run
+    如果你对 PHP 反射相关知识点不是很了解，推荐先进行了解一下
+    
+    - PHP官方文档: [https://php.net/manual/zh/book.reflection.php](https://php.net/manual/zh/book.reflection.php)
+    - ThinkPHP5.1 反射相关知识点: [https://www.kancloud.cn/manual/thinkphp5_1/469333](https://www.kancloud.cn/manual/thinkphp5_1/469333)
+    - wangyu/reflex-core composer扩展使用: [https://github.com/china-wangyu/php-reflex-core](https://github.com/china-wangyu/php-reflex-core)
+* `Restful API` 是一种API接口设计风格或者说潮流
 
-## 命名规范
+    如果你对 `Restful API` 还不了解，我收集了一些比较好的译文。
+    
+    - RESTful 架构风格概述: [https://juejin.im/entry/57c7a323a633bd006cfc1d84](https://juejin.im/entry/57c7a323a633bd006cfc1d84)
+    - Restful API PHP的学习视频: [https://www.imooc.com/learn/811](https://www.imooc.com/learn/811)
+* `Composer` 是`php`最为流行和使用最多的第三方扩展库
+    
+    > 推荐使用 阿里云`composer`镜像源 1分钟内快速同步，稳定可靠
 
-`ThinkPHP5`遵循PSR-2命名规范和PSR-4自动加载规范，并且注意如下规范：
+    如果你对 `Composer` 了解不够，请仔细阅读我收集的一些资料。
+    
+    - `composer` 入门中文文档: [https://docs.phpcomposer.com/](https://docs.phpcomposer.com/)
+    - `composer` 安装文档: [https://packagist.laravel-china.org/](https://packagist.laravel-china.org/)
+    - `composer` 更换国内源: [https://segmentfault.com/a/1190000019651993](https://segmentfault.com/a/1190000019651993)
 
-### 目录和文件
+到此，相信你对TRR有了一定的了解了，对TRR项目需要用到的技术有个清晰的了解，如果你还是不太清楚，请继续在网上寻找资源学习吧，
+加油，明天会更美丽。
 
-*   目录不强制规范，驼峰和小写+下划线模式均支持；
-*   类库、函数文件统一以`.php`为后缀；
-*   类的文件名均以命名空间定义，并且命名空间的路径和类库文件所在路径一致；
-*   类名和类文件名保持一致，统一采用驼峰法命名（首字母大写）；
+## 快速开始
 
-### 函数和类、属性命名
+在你项目文件夹内,点击鼠标右键 打开 `git Bash Here`
 
-*   类的命名采用驼峰法，并且首字母大写，例如 `User`、`UserType`，默认不需要添加后缀，例如`UserController`应该直接命名为`User`；
-*   函数的命名使用小写字母和下划线（小写字母开头）的方式，例如 `get_client_ip`；
-*   方法的命名使用驼峰法，并且首字母小写，例如 `getUserName`；
-*   属性的命名使用驼峰法，并且首字母小写，例如 `tableName`、`instance`；
-*   以双下划线“__”打头的函数或方法作为魔法方法，例如 `__call` 和 `__autoload`；
+在 `git bash` 命令行里使用以下命令
 
-### 常量和配置
+### 1. 检查服务端必备环境
 
-*   常量以大写字母和下划线命名，例如 `APP_PATH`和 `THINK_PATH`；
-*   配置参数以小写字母和下划线命名，例如 `url_route_on` 和`url_convert`；
+* 安装`PHP`环境(version: `7.1` 及以上)
+* 安装`Git`环境(version: `1.8` 及以上)
+* 安装`Composer`环境(version: `1.8` 及以上)
 
-### 数据表和字段
+### 2. 获取项目源码
 
-*   数据表和字段采用小写加下划线方式命名，并注意字段名不要以下划线开头，例如 `think_user` 表和 `user_name`字段，不建议使用驼峰和中文作为数据表字段命名。
+获取项目源码
 
-## 参与开发
+```bash
+git clone https://github.com/china-wangyu/TRR.git
+```
 
-请参阅 [ThinkPHP5 核心框架包](https://github.com/top-think/framework)。
+在进入项目目录
 
+```bash
+cd TRR
+```
+
+### 3. 安装项目依赖
+
+安装依赖
+
+```bash
+composer install
+```
+
+### 4. 运行项目
+
+为了防止PHP各种集成和非集成软件环境问题，本项目开发期间希望各位使用 `ThinkPHP5.1`内置服务
+有关文档: [https://www.kancloud.cn/manual/thinkphp5_1/518750](https://www.kancloud.cn/manual/thinkphp5_1/518750)
+
+```bash
+php think run -H 127.0.0.1 -p 8000
+```
+
+效果如下，就代表你启动内置服务成功了
+
+```bash
+F:\project\open-source-object\Trr\2019-7-6\TRR [master ≡ +0 ~217 -0 !]
+λ  php think run -H 127.0.0.1 -p 8000
+ThinkPHP Development server is started On <http://127.0.0.1:8000/>
+You can exit with `CTRL-C`
+Document root is: F:\project\open-source-object\Trr\2019-7-6\TRR\public
+[Sat Jul  6 17:42:19 2019] 127.0.0.1:57509 [200]: /
+[Sat Jul  6 17:42:20 2019] 127.0.0.1:57510 [200]: /favicon.ico
+```
+
+### 5. 浏览器访问
+
+访问地址: http://127.0.0.1:8000/
+
+
+
+
+
+## 其他功能
+
+### 生成 `markdown` 格式的 `API` 文档
+
+- 命令行生成
+
+    在项目根目录下打开 `cmd` 或 `终端` 输入以下命令
+    
+    ```bash
+    php think trr:build
+    ```
+    
+    效果如下，代表文档生成成功：
+    
+    ```bash
+    F:\project\open-source-object\Trr\2019-7-6\TRR [master ≡ +0 ~217 -0 !]
+    λ  php think trr:build
+    Successful. Output Document Successful . File Path ：api-md.md
+    ```
+
+- 使用 `WangYu/Doc` 类生成文档
+
+  实现代码如下：
+    
+  ```php
+  <?php
+  namespace app\index\controller;
+    
+  class Index
+    {
+    
+        // 创建 API Markdown 文档
+        public function build()
+        {
+            $doc = new \WangYu\Doc('api 模块','生成的API文档名称');
+            $doc->execute();
+        }
+   }
+  ``` 
+    
+  访问`Index`类下的`build`方法，就会在`项目根目录`创建你的API文档了
+
+## 维护与提问
+
+### 更新
+
+由于目前TRR目前还处在不断迭代更新阶段，TP5.1版本也在持续跟进，所以本课程的内容也会随着适配的进度而增加或者调整。
+
+### 完善
+
+局限于个人技术水平和写作能力，如果教程中有哪些地方读者觉得不对或者看不懂需要再讲仔细些可以随时提出。
+
+### 催更、提问与交流
+
+读者对本教程或者GitHub项目有任何疑问、建议都可以在作者GitHub仓库提个[issues](https://github.com/china-wangyu/TRR/issues)  
+
+或
+
+加【TRR 官方群】QQ群: `860613750`
+
+
+### 请我喝茶
+
+如果你觉得本项目帮助到你，想请作者**`喝杯茶`** , 请扫码打赏任意金额
+
+<div class='pay'>
+    <img width="300" src='http://pu7s2yelz.bkt.clouddn.com/1562406354618.jpg' alt='TRR 启用TP5.1内置服务'/>
+</div>
+
+    
 ## 版权信息
 
-ThinkPHP遵循Apache2开源协议发布，并提供免费使用。
+TRR 遵循Apache2开源协议发布，并提供免费使用。
 
 本项目包含的第三方源码和二进制文件之版权信息另行标注。
 
-版权所有Copyright © 2006-2018 by ThinkPHP (http://thinkphp.cn)
+版权所有Copyright © 2006-2018 by TRR
 
 All rights reserved。
 
-ThinkPHP® 商标和著作权所有者为上海顶想信息科技有限公司。
 
-更多细节参阅 [LICENSE.txt](LICENSE.txt)
+
+<style>
+    .pay{
+        text-align:center;
+    }
+</style>

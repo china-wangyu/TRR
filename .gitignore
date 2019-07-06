@@ -3,5 +3,4 @@
 /vendor
 /runtime
 api-md.md
-*.lock
-
+composer.lock

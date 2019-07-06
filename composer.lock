@@ -210,12 +210,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/china-wangyu/tp-doc.git",
-                "reference": "687158824d39e4889b130f8e62585451a6ce660e"
+                "reference": "84cf2631d10b94b8f2425e0990b819d40271653b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/china-wangyu/tp-doc/zipball/687158824d39e4889b130f8e62585451a6ce660e",
-                "reference": "687158824d39e4889b130f8e62585451a6ce660e",
+                "url": "https://api.github.com/repos/china-wangyu/tp-doc/zipball/84cf2631d10b94b8f2425e0990b819d40271653b",
+                "reference": "84cf2631d10b94b8f2425e0990b819d40271653b",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -246,7 +246,7 @@
                 }
             ],
             "description": "基于ThinkPHP5.1做的API文档模型composer扩展",
-            "time": "2019-07-05T17:09:30+00:00"
+            "time": "2019-07-05T17:46:53+00:00"
         },
         {
             "name": "wangyu/tp-exception",
