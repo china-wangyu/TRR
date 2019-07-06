@@ -211,7 +211,7 @@ Document root is: F:\project\open-source-object\Trr\2019-7-6\TRR\public
 
 ### 请我喝茶
 
-如果你觉得本项目帮助到你，想请作者**`喝杯茶`** , 请扫码打赏任意金额
+如果你觉得本项目帮助到你，想请作者**喝杯茶** , 请扫码打赏任意金额
 
 <div class='pay'>
     <img width="300" src='http://pu7s2yelz.bkt.clouddn.com/1562406354618.jpg' alt='TRR 启用TP5.1内置服务'/>
