@@ -97,7 +97,7 @@ class Token
      */
     public static function getCurrentUID()
     {
-        $uid = self::getCurrentTokenVar('uid');
+        $uid = self::getCurrentTokenVar('uuid');
         return $uid;
     }
 
@@ -139,18 +139,18 @@ class Token
         try {
             $jwt = (array)JWT::decode($token, $secretKey, ['HS256']);
         } catch (\Firebase\JWT\SignatureInvalidException $e) {  //签名不正确
-            throw new TokenException(['msg' => '令牌签名不正确']);
+            throw new TokenException(['message' => '令牌签名不正确']);
         } catch (\Firebase\JWT\BeforeValidException $e) {  // 签名在某个时间点之后才能用
-            throw new TokenException(['msg' => '令牌尚未生效']);
+            throw new TokenException(['message' => '令牌尚未生效']);
         } catch (\Firebase\JWT\ExpiredException $e) {  // token过期
-            throw new TokenException(['msg' => '令牌已过期，刷新浏览器重试']);
+            throw new TokenException(['message' => '令牌已过期，刷新浏览器重试']);
         } catch (Exception $e) {  //其他错误
             throw new Exception($e->getMessage());
         }
         if (array_key_exists($key, $jwt)) {
             return $jwt[$key];
         } else {
-            throw new TokenException(['msg' => '尝试获取的Token变量不存在']);
+            throw new TokenException(['message' => '尝试获取的Token变量不存在']);
         }
 
     }

@@ -147,8 +147,31 @@ Document root is: F:\project\open-source-object\Trr\2019-7-6\TRR\public
 
 
 
-
 ## 其他功能
+
+### 创建 `JWT` 的 `Token`
+
+[route]: `http://127.0.0.1:8000/auth?name=trr&password=trr`
+[method]: `post`
+返回效果：
+```json
+{
+    "access_token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJUUlIiLCJpYXQiOjE1NjI0MDk2MDgsImV4cCI6MTU2MjQxNjgwOCwidXVpZCI6MTAwLCJzaWduYXR1cmUiOiJ0cnIifQ.MXXGcK2xjAznzcC-PQ66dRAo30Wn1poNLCNbFcO7ORA",
+    "refresh_token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJUUlIiLCJpYXQiOjE1NjI0MDk2MDgsInV1aWQiOjEwMCwic2lnbmF0dXJlIjoidHJyIn0.RBs5iOSTjC89Z6H4CPl9tNyXHOhtmuPQPd7JOB_n5JY"
+}
+```
+
+### 刷新 `JWT` 的 `Token`
+
+[route]: `http://127.0.0.1:8000/auth/refresh`
+[method]: `get`
+[header]: 需要设置：`authorization`
+返回效果：
+```json
+{
+    "access_token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJUUlIiLCJpYXQiOjE1NjI0MTE0OTMsImV4cCI6MTU2MjQxODY5MywidXVpZCI6MTAwLCJzaWduYXR1cmUiOiJ0cnIifQ.4siwrzghm-r_SZNz-SUwkI3Of-9Hx9vOHMYdHXjf7rA"
+}
+```
 
 ### 生成 `markdown` 格式的 `API` 文档
 

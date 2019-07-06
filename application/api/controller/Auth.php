@@ -16,7 +16,7 @@ class Auth
 {
     /**
      * @doc('创建授权')
-     * @route('','get')
+     * @route('','post')
      * @param('name','名称','require')
      * @param('password','密码','require')
      * @return \think\response\Json
@@ -27,13 +27,15 @@ class Auth
     }
 
     /**
-     * @doc('创建授权')
-     * @route('','put')
-     * @param('name','名称','require')
-     * @param('password','密码','require')
-     * @return \think\response\Json
+     * @doc('刷新授权')
+     * @route('refresh','get')
+     * @return array
+     * @throws \app\lib\exception\token\TokenException
+     * @throws \think\Exception
      */
     public function refresh()
     {
+        $result = Token::refresh();
+        return json($result, 200);
     }
 }
