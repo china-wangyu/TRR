@@ -242,6 +242,10 @@ Document root is: F:\project\open-source-object\Trr\2019-7-6\TRR\public
      alt='请作者喝茶' />
 </p>
 
+或者
+
+[点我](http://pu7s2yelz.bkt.clouddn.com/1562406354618.jpg)
+
     
 ## 版权信息
 
