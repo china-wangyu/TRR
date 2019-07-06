@@ -213,9 +213,11 @@ Document root is: F:\project\open-source-object\Trr\2019-7-6\TRR\public
 
 如果你觉得本项目帮助到你，想请作者**喝杯茶** , 请扫码打赏任意金额
 
-<div class='pay'>
-    <img width="300" src='http://pu7s2yelz.bkt.clouddn.com/1562406354618.jpg' alt='TRR 启用TP5.1内置服务'/>
-</div>
+<p align="center">
+    <img width="300"
+    src='http://pu7s2yelz.bkt.clouddn.com/1562406354618.jpg'
+     alt='请作者喝茶' />
+</p>
 
     
 ## 版权信息
@@ -227,11 +229,3 @@ TRR 遵循Apache2开源协议发布，并提供免费使用。
 版权所有Copyright © 2006-2018 by TRR
 
 All rights reserved。
-
-
-
-<style>
-    .pay{
-        text-align:center;
-    }
-</style>
