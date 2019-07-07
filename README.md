@@ -16,9 +16,9 @@
 
 ## TRR 是什么？
 
-TRR 是 ThinkPHP51 Reflection Restful API（注：API设计风格） 的字母第一个字符大写后拼接而来，
-从ThinkPHP51 Reflex Restful API全称可以看出来，
-这套接口框架设计主要围绕反射来做Restful API接口设计的。
+TRR 是` ThinkPHP51 Reflection Restful API`（注：API设计风格） 的字母第一个字符大写后拼接而来，
+从`ThinkPHP51 Reflection Restful API`全称可以看出来，
+这套接口框架设计主要围绕`反射`来做`Restful API接口设计`的。
 
 ## TRR 可以做什么？
 
@@ -63,15 +63,15 @@ TRR 是 ThinkPHP51 Reflection Restful API（注：API设计风格） 的字母�
 
     如果你对 PHP 反射相关知识点不是很了解，推荐先进行了解一下
     
-    - PHP官方文档: [https://php.net/manual/zh/book.reflection.php](https://php.net/manual/zh/book.reflection.php)
-    - ThinkPHP5.1 反射相关知识点: [https://www.kancloud.cn/manual/thinkphp5_1/469333](https://www.kancloud.cn/manual/thinkphp5_1/469333)
-    - wangyu/reflex-core composer扩展使用: [https://github.com/china-wangyu/php-reflex-core](https://github.com/china-wangyu/php-reflex-core)
+    - `PHP`官方文档: [https://php.net/manual/zh/book.reflection.php](https://php.net/manual/zh/book.reflection.php)
+    - `ThinkPHP5.1` 反射相关知识点: [https://www.kancloud.cn/manual/thinkphp5_1/469333](https://www.kancloud.cn/manual/thinkphp5_1/469333)
+    - `wangyu/reflex-core composer`扩展使用: [https://github.com/china-wangyu/php-reflex-core](https://github.com/china-wangyu/php-reflex-core)
 * `Restful API` 是一种API接口设计风格或者说潮流
 
     如果你对 `Restful API` 还不了解，我收集了一些比较好的译文。
     
-    - RESTful 架构风格概述: [https://juejin.im/entry/57c7a323a633bd006cfc1d84](https://juejin.im/entry/57c7a323a633bd006cfc1d84)
-    - Restful API PHP的学习视频: [https://www.imooc.com/learn/811](https://www.imooc.com/learn/811)
+    -` RESTful `架构风格概述: [https://juejin.im/entry/57c7a323a633bd006cfc1d84](https://juejin.im/entry/57c7a323a633bd006cfc1d84)
+    - `Restful API PHP`的学习视频: [https://www.imooc.com/learn/811](https://www.imooc.com/learn/811)
 * `Composer` 是`php`最为流行和使用最多的第三方扩展库
     
     > 推荐使用 阿里云`composer`镜像源 1分钟内快速同步，稳定可靠
@@ -256,10 +256,10 @@ header: 需要设置：`authorization`
     
 ## 版权信息
 
-TRR 遵循Apache2开源协议发布，并提供免费使用。
+TRR 遵循 MIT 开源协议发布，并提供免费使用。
 
 本项目包含的第三方源码和二进制文件之版权信息另行标注。
 
-版权所有Copyright © 2006-2018 by TRR
+版权所有Copyright © 2006-2019 by TRR
 
 All rights reserved。
