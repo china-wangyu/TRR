@@ -17,6 +17,7 @@ class Book
      * sdas
      * @doc('创建图书')
      * @route('','get')
+     * @validate('CreateGroup')
      * @param('name','图书名称','require|graph|length:1,50')
      * @param('img','图书img','require|graph|length:1,16')
      * @return array
