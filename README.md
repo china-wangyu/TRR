@@ -1,6 +1,6 @@
 <h1 align="center">
   <a href="https://github.com/china-wangyu/TRR">
-   <!-- <img src="http://doc.cms.7yue.pro/left-logo.png" width="250"/> -->
+   <img src="http://pu7s2yelz.bkt.clouddn.com/TRR_logo_1.png" alt="TRR" width="600"/>
   </a>
   <br>
   TRR
