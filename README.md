@@ -130,21 +130,15 @@ php think run -H 127.0.0.1 -p 8000
 
 效果如下，就代表你启动内置服务成功了
 
-```bash
-F:\project\open-source-object\Trr\2019-7-6\TRR [master ≡ +0 ~217 -0 !]
-λ  php think run -H 127.0.0.1 -p 8000
-ThinkPHP Development server is started On <http://127.0.0.1:8000/>
-You can exit with `CTRL-C`
-Document root is: F:\project\open-source-object\Trr\2019-7-6\TRR\public
-[Sat Jul  6 17:42:19 2019] 127.0.0.1:57509 [200]: /
-[Sat Jul  6 17:42:20 2019] 127.0.0.1:57510 [200]: /favicon.ico
-```
+![thinkphp5.1内置服务器](http://pu7s2yelz.bkt.clouddn.com/TRR%20%E5%90%AF%E7%94%A8TP51%E5%86%85%E7%BD%AE%E6%9C%8D%E5%8A%A1%E5%90%AF%E5%8A%A8.png)
 
 ### 5. 浏览器访问
 
-访问地址: http://127.0.0.1:8000/
+然后你可以直接在浏览器里面访问
 
-
+```
+http://127.0.0.1:8000/
+```
 
 
 ## 其他功能
@@ -187,7 +181,7 @@ header: 需要设置：`authorization`
     在项目根目录下打开 `cmd` 或 `终端` 输入以下命令
     
     ```bash
-    php think trr:build
+    php think trr:doc
     ```
     
     效果如下，代表文档生成成功：
@@ -217,14 +211,20 @@ header: 需要设置：`authorization`
         }
    }
   ``` 
-    
-  访问`Index`类下的`build`方法，就会在`项目根目录`创建你的API文档了
+ 
+注意 ！
+注意 !
+注意 !
+ 
+**访问`Index`类下的`build`方法,这样写不会有什么响应, 就会在`项目根目录`创建你的API文档了**
 
 ## 维护与提问
 
 ### 更新
 
-由于目前TRR目前还处在不断迭代更新阶段，TP5.1版本也在持续跟进，所以本课程的内容也会随着适配的进度而增加或者调整。
+由于目前TRR目前还处在不断迭代更新阶段，TP5.1版本也在持续跟进，所以本文档的内容也会随着适配的进度而增加或者调整。
+
+项目更新记录，可以在`CHANGELOG.md`查看
 
 ### 完善
 
@@ -248,11 +248,6 @@ header: 需要设置：`authorization`
     src='http://pu7s2yelz.bkt.clouddn.com/1562406354618.jpg'
      alt='请作者喝茶' />
 </p>
-
-或者
-
-[点我](http://pu7s2yelz.bkt.clouddn.com/1562406354618.jpg)
-
     
 ## 版权信息
 

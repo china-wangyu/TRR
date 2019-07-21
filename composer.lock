@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "39a7378398666a8bde36ffde46565ac2",
+    "content-hash": "caa3bb1f6032a243b408c9d40995acc6",
     "packages": [
         {
             "name": "firebase/php-jwt",
@@ -21,7 +21,7 @@
                 "shasum": "",
                 "mirrors": [
                     {
-                        "url": "https://dl.laravel-china.org/%package%/%reference%.%type%",
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
                         "preferred": true
                     }
                 ]
@@ -73,7 +73,7 @@
                 "shasum": "",
                 "mirrors": [
                     {
-                        "url": "https://dl.laravel-china.org/%package%/%reference%.%type%",
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
                         "preferred": true
                     }
                 ]
@@ -130,7 +130,7 @@
                 "shasum": "",
                 "mirrors": [
                     {
-                        "url": "https://dl.laravel-china.org/%package%/%reference%.%type%",
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
                         "preferred": true
                     }
                 ]
@@ -163,21 +163,21 @@
             "time": "2018-05-11T06:45:42+00:00"
         },
         {
-            "name": "wangyu/reflex-core",
-            "version": "0.0.5",
+            "name": "wangyu/tp-anntation",
+            "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/china-wangyu/php-reflex-core.git",
-                "reference": "9473504bbbd149aac141dfd2607852d5d2b7460f"
+                "url": "https://github.com/china-wangyu/tp-anntation.git",
+                "reference": "37d0ace4ab8a28033d41f2ebb2854f2e558374bf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/china-wangyu/php-reflex-core/zipball/9473504bbbd149aac141dfd2607852d5d2b7460f",
-                "reference": "9473504bbbd149aac141dfd2607852d5d2b7460f",
+                "url": "https://api.github.com/repos/china-wangyu/tp-anntation/zipball/37d0ace4ab8a28033d41f2ebb2854f2e558374bf",
+                "reference": "37d0ace4ab8a28033d41f2ebb2854f2e558374bf",
                 "shasum": "",
                 "mirrors": [
                     {
-                        "url": "https://dl.laravel-china.org/%package%/%reference%.%type%",
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
                         "preferred": true
                     }
                 ]
@@ -201,192 +201,15 @@
                     "email": "china_wangyu@aliyun.com"
                 }
             ],
-            "description": "原生PHP的reflex反射注释模型composer扩展",
-            "time": "2019-07-03T11:20:30+00:00"
-        },
-        {
-            "name": "wangyu/tp-doc",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/china-wangyu/tp-doc.git",
-                "reference": "84cf2631d10b94b8f2425e0990b819d40271653b"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/china-wangyu/tp-doc/zipball/84cf2631d10b94b8f2425e0990b819d40271653b",
-                "reference": "84cf2631d10b94b8f2425e0990b819d40271653b",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "https://dl.laravel-china.org/%package%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
-            },
-            "require": {
-                "php": ">=7.1.0",
-                "wangyu/reflex-core": ">=0.0.1",
-                "wangyu/tp-exception": "dev-master"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "WangYu\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "WangYu",
-                    "email": "china_wangyu@aliyun.com"
-                }
-            ],
-            "description": "基于ThinkPHP5.1做的API文档模型composer扩展",
-            "time": "2019-07-05T17:46:53+00:00"
-        },
-        {
-            "name": "wangyu/tp-exception",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/china-wangyu/tp-exception.git",
-                "reference": "4aabb8ee4297e6f0b554eb31381c6f25763068ea"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/china-wangyu/tp-exception/zipball/4aabb8ee4297e6f0b554eb31381c6f25763068ea",
-                "reference": "4aabb8ee4297e6f0b554eb31381c6f25763068ea",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "https://dl.laravel-china.org/%package%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
-            },
-            "require": {
-                "php": ">=7.1.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "WangYu\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "wangyu",
-                    "email": "china_wangyu@aliyun.com"
-                }
-            ],
-            "description": "TP5.1 的异常核心类，含多异常输出，异常类型判断",
-            "time": "2019-07-04T03:02:06+00:00"
-        },
-        {
-            "name": "wangyu/tp-route",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/china-wangyu/tp-route-core.git",
-                "reference": "d2438bb2c49a939cb328c9901aa85468fc3af6fa"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/china-wangyu/tp-route-core/zipball/d2438bb2c49a939cb328c9901aa85468fc3af6fa",
-                "reference": "d2438bb2c49a939cb328c9901aa85468fc3af6fa",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "https://dl.laravel-china.org/%package%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
-            },
-            "require": {
-                "php": ">=7.1.0",
-                "wangyu/reflex-core": ">=0.0.1",
-                "wangyu/tp-exception": "dev-master"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "WangYu\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "wangyu",
-                    "email": "china_wangyu@aliyun.com"
-                }
-            ],
-            "description": "ThinkPhp5.1 的反射路由类核心模块封装，含多种路由注册模式，路由及请求类型验证,基于`wangyu/reflex-core`扩展。本扩展为注释全家桶的核心路由模块。",
-            "time": "2019-07-03T09:01:07+00:00"
-        },
-        {
-            "name": "wangyu/tp-validate",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/china-wangyu/tp-validate.git",
-                "reference": "c98d7def6e1111d898fad772762f47c216e25474"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/china-wangyu/tp-validate/zipball/c98d7def6e1111d898fad772762f47c216e25474",
-                "reference": "c98d7def6e1111d898fad772762f47c216e25474",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "https://dl.laravel-china.org/%package%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
-            },
-            "require": {
-                "php": ">=7.1.0",
-                "wangyu/reflex-core": ">=0.0.1",
-                "wangyu/tp-exception": "dev-master"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "WangYu\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "wangyu",
-                    "email": "china_wangyu@aliyun.com"
-                }
-            ],
-            "description": "TP5.1 的反射验证器核心类，含参数中间件封装，路由参数验证中间件，方法注释参数提取器，基于`wangyu/reflex-core`扩展",
-            "time": "2019-07-03T08:56:13+00:00"
+            "description": "ThinkPHP5 的简易注解扩展，含注解路由（支持路由分组），注解参数验证（支持验证器和参数验证），注解Api文档生成等功能",
+            "time": "2019-07-21T06:15:12+00:00"
         }
     ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "wangyu/tp-route": 20,
-        "wangyu/tp-doc": 20,
-        "wangyu/tp-validate": 20,
-        "wangyu/tp-exception": 20
+        "wangyu/tp-anntation": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

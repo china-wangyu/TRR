@@ -123,15 +123,15 @@ class Token
         $authorization = Request::header('authorization');
 
         if (!$authorization) {
-            throw new TokenException(['message' => '请求未携带authorization信息']);
+            throw new TokenException('请求header未携带authorization信息');
         }
 
         list($type, $token) = explode(' ', $authorization);
 
-        if ($type !== 'Bearer') throw new TokenException(['message' => '接口认证方式需为Bearer']);
+        if ($type !== 'Bearer') throw new TokenException('接口认证方式需为Bearer');
 
         if (!$token) {
-            throw new TokenException(['message' => '尝试获取的authorization信息不存在']);
+            throw new TokenException('尝试获取的authorization信息不存在');
         }
 
         $secretKey = static::$key;
@@ -139,18 +139,18 @@ class Token
         try {
             $jwt = (array)JWT::decode($token, $secretKey, ['HS256']);
         } catch (\Firebase\JWT\SignatureInvalidException $e) {  //签名不正确
-            throw new TokenException(['message' => '令牌签名不正确']);
+            throw new TokenException('令牌签名不正确');
         } catch (\Firebase\JWT\BeforeValidException $e) {  // 签名在某个时间点之后才能用
-            throw new TokenException(['message' => '令牌尚未生效']);
+            throw new TokenException('令牌尚未生效');
         } catch (\Firebase\JWT\ExpiredException $e) {  // token过期
-            throw new TokenException(['message' => '令牌已过期，刷新浏览器重试']);
+            throw new TokenException('令牌已过期，刷新浏览器重试');
         } catch (Exception $e) {  //其他错误
             throw new Exception($e->getMessage());
         }
         if (array_key_exists($key, $jwt)) {
             return $jwt[$key];
         } else {
-            throw new TokenException(['message' => '尝试获取的Token变量不存在']);
+            throw new TokenException('尝试获取的Token变量不存在');
         }
 
     }

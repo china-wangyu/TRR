@@ -8,7 +8,7 @@ use app\lib\token\Token;
 /**
  * Class Auth
  * @doc('授权类')
- * @route('auth')
+ * @group('auth')
  * @middleware('Validate')
  * @package app\api\controller
  */
@@ -16,7 +16,8 @@ class Auth
 {
     /**
      * @doc('创建授权')
-     * @route('','post')
+     * @route('','get')
+     * @validate('Token')
      * @param('name','名称','require')
      * @param('password','密码','require')
      * @return \think\response\Json
