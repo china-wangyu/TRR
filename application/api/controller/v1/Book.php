@@ -7,7 +7,7 @@ namespace app\api\controller\v1;
 /**
  * Class Book
  * @doc(图书类)
- * @route('v1/book')
+ * @group('v1/book')
  * @middleware('Validate')
  * @package app\api\controller\v1
  */

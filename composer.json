@@ -18,11 +18,8 @@
     "require": {
         "php": ">=5.6.0",
         "topthink/framework": "5.1.*",
-        "wangyu/tp-route": "dev-master",
-        "wangyu/tp-doc": "dev-master",
-        "wangyu/tp-validate": "dev-master",
-        "wangyu/tp-exception": "dev-master",
-        "firebase/php-jwt": "^5.0"
+        "firebase/php-jwt": "^5.0",
+        "wangyu/tp-anntation": "dev-master"
     },
     "autoload": {
         "psr-4": {
@@ -38,7 +35,7 @@
     "repositories": {
         "packagist": {
             "type": "composer",
-            "url": "https://packagist.laravel-china.org"
+            "url": "https://mirrors.aliyun.com/composer/"
         }
     }
 }

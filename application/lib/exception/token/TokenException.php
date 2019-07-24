@@ -9,9 +9,9 @@
 namespace app\lib\exception\token;
 
 
-class TokenException extends \WangYu\Exception
+use WangYu\exception\Exception;
+
+class TokenException extends Exception
 {
-    public $code = 401;
-    public $msg  = 'Token已过期或无效Token';
-    public $errorCode = '10001';
+    public $errorCode = 100001;
 }
