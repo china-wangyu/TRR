@@ -20,7 +20,6 @@
         "topthink/framework": "5.1.*",
         "firebase/php-jwt": "^5.0",
         "wangyu/tp-anntation": "dev-master",
-        "joyqi/hyper-down": "dev-master",
         "erusev/parsedown-extra": "^0.7.0"
     },
     "autoload": {

@@ -196,34 +196,17 @@ header: 需要设置：`authorization`
     λ  php think trr:doc
     Successful. Output Document Successful . File Path ：api-md.md
     ```
-
-- 使用 `WangYu/Doc` 类生成文档
-
-  实现代码如下：
-    
-  ```php
-  <?php
-  namespace app\index\controller;
-    
-  class Index
-    {
-    
-        // 创建 API Markdown 文档
-        public function build()
-        {
-            $doc = new \WangYu\Doc('api 模块','生成的API文档名称');
-            $doc->execute();
-        }
-   }
-  ``` 
  
 注意 ！
 注意 !
 注意 !
- 
-**访问`Index`类下的`build`方法,这样写不会有什么响应, 就会在`项目根目录`创建你的API文档了**
 
-Demo: [演示站点]（http://pu7s2yelz.bkt.clouddn.com/TRR_logo_2.png）
+## 演示地址 
+
+官方运行示例: [演示站点]（http://trr.ibs3.cn/）
+官方`API Markdown文档`示例: [演示站点]（http://trr.ibs3.cn/apiShow）
+本地运行示例: http://127.0.0.1:8000/
+本地`API Markdown文档`示例: http://127.0.0.1:8000/apiShow
 
 ## 维护与提问
 

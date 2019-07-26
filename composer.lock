@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "55caacd91f86537d0eaaaafecf6fb7af",
+    "content-hash": "e018589b3dd725a50083c41a208f545f",
     "packages": [
         {
             "name": "erusev/parsedown",
@@ -161,48 +161,6 @@
             "time": "2017-06-27T22:17:23+00:00"
         },
         {
-            "name": "joyqi/hyper-down",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/SegmentFault/HyperDown.git",
-                "reference": "30d1ececb5dfac6829561fd6f05bec39276d3569"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/SegmentFault/HyperDown/zipball/30d1ececb5dfac6829561fd6f05bec39276d3569",
-                "reference": "30d1ececb5dfac6829561fd6f05bec39276d3569",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
-            },
-            "require": {
-                "php": ">=5.4.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "HyperDown\\": "./"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD"
-            ],
-            "authors": [
-                {
-                    "name": "joyqi",
-                    "email": "joyqi@segmentfault.com"
-                }
-            ],
-            "description": "A light weight markdown parser library",
-            "time": "2018-08-13T09:00:41+00:00"
-        },
-        {
             "name": "topthink/framework",
             "version": "v5.1.37.1",
             "source": {
@@ -312,12 +270,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/china-wangyu/tp-anntation.git",
-                "reference": "04b7f98b28cef3e14b1391fb187e322d4416281f"
+                "reference": "3a5e40a7703d4b6faec540c68f6431a2edd8bfc3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/china-wangyu/tp-anntation/zipball/04b7f98b28cef3e14b1391fb187e322d4416281f",
-                "reference": "04b7f98b28cef3e14b1391fb187e322d4416281f",
+                "url": "https://api.github.com/repos/china-wangyu/tp-anntation/zipball/3a5e40a7703d4b6faec540c68f6431a2edd8bfc3",
+                "reference": "3a5e40a7703d4b6faec540c68f6431a2edd8bfc3",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -346,15 +304,14 @@
                 }
             ],
             "description": "ThinkPHP5 的简易注解扩展，含注解路由（支持路由分组），注解参数验证（支持验证器和参数验证），注解Api文档生成等功能",
-            "time": "2019-07-26T02:31:24+00:00"
+            "time": "2019-07-26T03:00:56+00:00"
         }
     ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "wangyu/tp-anntation": 20,
-        "joyqi/hyper-down": 20
+        "wangyu/tp-anntation": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
