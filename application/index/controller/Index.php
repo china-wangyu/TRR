@@ -5,15 +5,32 @@ use think\Controller;
 
 class Index extends Controller
 {
-    public function index()
-    {
-        $parser = new \HyperDown\Parser;
-        $html = $parser->makeHtml(file_get_contents(env('ROOT_PATH').'api-md.md'));
-//        $Extra = new \Parsedown();
-//        $html = $Extra->parse(file_get_contents(env('ROOT_PATH').'api-md.md'));
-//        dump($html);die;
+    public function index(){
         return $this->display(
-            "<html>
+            $this->html($this->mdToHtml(file_get_contents(env('ROOT_PATH').'README.md')))
+        );
+    }
+
+    public function apiMdDemo()
+    {
+        return $this->display(
+            $this->html($this->mdToHtml(file_get_contents(env('ROOT_PATH').'api-md.md')))
+        );
+
+    }
+
+    public function hello($name = 'ThinkPHP5')
+    {
+        return 'hello,' . $name;
+    }
+
+    private function mdToHtml(string $content){
+        $parser = new \Parsedown;
+        return $parser->parse($content);
+    }
+
+    private function html(string $content){
+        return "<html>
                         <header>
                             <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">
                             <link href=\"https://cdn.bootcss.com/github-markdown-css/3.0.1/github-markdown.css\" rel=\"stylesheet\">
@@ -33,15 +50,7 @@ class Index extends Controller
                                 }
                             </style>
                         </header>
-                        <body class='markdown-body'>$html<body>
-                     </html>"
-        );
-
-
-    }
-
-    public function hello($name = 'ThinkPHP5')
-    {
-        return 'hello,' . $name;
+                        <body class='markdown-body'>$content<body>
+                     </html>";
     }
 }

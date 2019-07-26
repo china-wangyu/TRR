@@ -5,15 +5,14 @@
 namespace app\api\validate\manage;
 
 
-use WangYu\validate\BaseValidate;
 
-class CreateGroup extends BaseValidate
+class CreateGroup extends \WangYu\validate\Validate
 {
     protected $rule = [
-        'nickname' => 'require|max:1,3'
+        'name' => 'require|max:1,3'
     ];
 
     protected $message = [
-        'nickname' => '名称必填'
+        'name.require' => '名称必填'
     ];
 }

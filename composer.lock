@@ -312,12 +312,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/china-wangyu/tp-anntation.git",
-                "reference": "37d0ace4ab8a28033d41f2ebb2854f2e558374bf"
+                "reference": "04b7f98b28cef3e14b1391fb187e322d4416281f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/china-wangyu/tp-anntation/zipball/37d0ace4ab8a28033d41f2ebb2854f2e558374bf",
-                "reference": "37d0ace4ab8a28033d41f2ebb2854f2e558374bf",
+                "url": "https://api.github.com/repos/china-wangyu/tp-anntation/zipball/04b7f98b28cef3e14b1391fb187e322d4416281f",
+                "reference": "04b7f98b28cef3e14b1391fb187e322d4416281f",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -346,7 +346,7 @@
                 }
             ],
             "description": "ThinkPHP5 的简易注解扩展，含注解路由（支持路由分组），注解参数验证（支持验证器和参数验证），注解Api文档生成等功能",
-            "time": "2019-07-21T06:15:12+00:00"
+            "time": "2019-07-26T02:31:24+00:00"
         }
     ],
     "packages-dev": [],

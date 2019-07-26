@@ -42,7 +42,14 @@ class Auth
      * @return array
      * @throws \app\lib\exception\token\TokenException
      * @throws \think\Exception
-     * @success('')
+     * @success('{
+        "access_token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJUUlIiLCJpYXQiOjE1NjQxMDY2ODAsImV4cCI6MTU2NDExMzg4MCwidXVpZCI6MTAwLCJzaWduYXR1cmUiOiIyMyJ9.1Te9jeAQVvj6VbgiVEk1-CChn8KybpOXqiyH8a4UB68"
+        }')
+     * @error('{
+        "code": 3000,
+        "message": "3000: 错误内容 . 1000: 错误内容 . 请求header未携带authorization信息",
+        "request_url": "auth/refresh"
+        }')
      */
     public function refresh()
     {
