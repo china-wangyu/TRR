@@ -140,6 +140,11 @@ php think run -H 127.0.0.1 -p 8000
 http://127.0.0.1:8000/
 ```
 
+浏览器显示如下：
+
+<p align="center">
+  <img src="http://pu7s2yelz.bkt.clouddn.com/TRR_logo_2.png" alt="php version" width="100%">
+</p>
 
 ## 其他功能
 
@@ -217,6 +222,8 @@ header: 需要设置：`authorization`
 注意 !
  
 **访问`Index`类下的`build`方法,这样写不会有什么响应, 就会在`项目根目录`创建你的API文档了**
+
+Demo: [演示站点]（http://pu7s2yelz.bkt.clouddn.com/TRR_logo_2.png）
 
 ## 维护与提问
 
