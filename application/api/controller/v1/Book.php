@@ -4,6 +4,7 @@
 
 namespace app\api\controller\v1;
 
+
 /**
  * Class Book
  * @doc(图书类)
@@ -16,13 +17,14 @@ class Book
     /**
      * sdas
      * @doc('创建图书')
-     * @route('','get')
-     * @validate('CreateGroup')
+     * @route('','post')
      * @param('name','图书名称','require|graph|length:1,50')
      * @param('img','图书img','require|graph|length:1,16')
-     * @return array
+     * @return \think\response\Json
+     * @success('')
+     * @error('')
      */
-    public function create():array
+    public function create()
     {
         return json(['msg'=>'创建成功'],200);
     }
