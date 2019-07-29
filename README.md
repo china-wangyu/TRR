@@ -1,6 +1,6 @@
 <h1 align="center">
   <a href="https://github.com/china-wangyu/TRR">
-   <img src="http://pu7s2yelz.bkt.clouddn.com/TRR_logo_2.png" alt="TRR" width="600"/>
+   <img src="http://119.23.230.16:9000/data/User/admin/home/pictures/TRR_logo.png" alt="TRR" width="600"/>
   </a>
   <br>
   TRR
@@ -130,7 +130,13 @@ php think run -H 127.0.0.1 -p 8000
 
 效果如下，就代表你启动内置服务成功了
 
-![thinkphp5.1内置服务器](http://pu7s2yelz.bkt.clouddn.com/TRR%20%E5%90%AF%E7%94%A8TP51%E5%86%85%E7%BD%AE%E6%9C%8D%E5%8A%A1%E5%90%AF%E5%8A%A8.png)
+```bash
+wy@Mac TRR (master) $ php think run -H 127.0.0.1 -p 8000
+ThinkPHP Development server is started On <http://127.0.0.1:8000/>
+You can exit with `CTRL-C`
+Document root is: /Users/wy/Desktop/TRR/public
+[Mon Jul 29 16:39:08 2019] Failed to listen on 127.0.0.1:8000 (reason: Address already in use)
+```
 
 ### 5. 浏览器访问
 
@@ -140,11 +146,6 @@ php think run -H 127.0.0.1 -p 8000
 http://127.0.0.1:8000/
 ```
 
-浏览器显示如下：
-
-<p align="center">
-  <img src="http://pu7s2yelz.bkt.clouddn.com/TRR_logo_2.png" alt="php version" width="100%">
-</p>
 
 ## 其他功能
 
@@ -203,8 +204,8 @@ header: 需要设置：`authorization`
 
 ## 演示地址 
 
-* 官方运行示例: [演示站点]（http://trr.ibs3.cn/）, [备用站点](http://119.23.230.16:8000/)
-* 官方`API Markdown文档`示例: [演示站点]（http://trr.ibs3.cn/apiShow）, [备用站点](http://119.23.230.16:8000/apiShow)
+* 官方运行示例: [演示站点](http://trr.ibs3.cn), [备用站点](http://47.240.11.136:8000/)
+* 官方`API Markdown文档`示例: [演示站点](http://trr.ibs3.cn/apiShow), [备用站点](http://47.240.11.136:8000/apiShow)
 * 本地运行示例: http://127.0.0.1:8000/
 * 本地`API Markdown文档`示例: http://127.0.0.1:8000/apiShow
 
@@ -235,7 +236,7 @@ header: 需要设置：`authorization`
 
 <p align="center">
     <img width="300"
-    src='http://pu7s2yelz.bkt.clouddn.com/1562406354618.jpg'
+    src='http://119.23.230.16:9000/data/User/admin/home/pictures/%E6%94%AF%E4%BB%98%E5%AE%9D%E6%94%B6%E6%AC%BE%E7%A0%81.jpg'
      alt='请作者喝茶' />
 </p>
     
