@@ -40,50 +40,13 @@ TRR 是` ThinkPHP51 Reflection Restful API`（注：API设计风格） 的字母
 我们只想你的项目更快、更稳定、更以维护的成型。
 
 
-## 使用须知
+## 使用文档
 
-在使用TRR时必定会用到的技能，你得做一个评估，查看自己是否可以无障碍使用。
+TRR-v0.0.1文档：[👉 点我了解](https://china-wangyu.github.io/views/php/trr/v0.0.1/)
 
-### 涉及技术或框架
+TRR-v0.0.2文档：[👉 点我了解](https://china-wangyu.github.io/views/php/trr/v0.0.2/)
 
-* ` PHP7.1 ` 一种支持热编译的脚本语言
-
-    你需要熟练掌握` PHP7.1 `相关知识点，如果你精通此技能那就再好不过了，不精通也没关系，请根据我收集的教程和资料进行学习
-    
-    - `PHP` 官方文档: [https://php.net/manual/zh/](https://php.net/manual/zh/)
-    - 【极客学院】PHP全套教学视频: [https://www.bilibili.com/video/av10274152?from=search&seid=2228250606023131784](https://www.bilibili.com/video/av10274152?from=search&seid=2228250606023131784)
-    - 韩顺平php从入门到精通:  https://pan.baidu.com/s/1YDQoLodysxCP4rAyyTgD_Q 提取码: 6hyy
-    
-     
-* `ThinkPHP5.1` ：中国比较流行且会一直流行的PHP框架
-    
-    如果你对`ThinkPHP5.1`不太了解，或者一知半解，请到官方文档进行查阅，补充效果知识点。
-    [官方文档](https://www.kancloud.cn/manual/thinkphp5_1/content)
-* `Reflection` PHP 反射机制
-
-    如果你对 PHP 反射相关知识点不是很了解，推荐先进行了解一下
-    
-    - `PHP`官方文档: [https://php.net/manual/zh/book.reflection.php](https://php.net/manual/zh/book.reflection.php)
-    - `ThinkPHP5.1` 反射相关知识点: [https://www.kancloud.cn/manual/thinkphp5_1/469333](https://www.kancloud.cn/manual/thinkphp5_1/469333)
-    - `wangyu/reflex-core composer`扩展使用: [https://github.com/china-wangyu/php-reflex-core](https://github.com/china-wangyu/php-reflex-core)
-* `Restful API` 是一种API接口设计风格或者说潮流
-
-    如果你对 `Restful API` 还不了解，我收集了一些比较好的译文。
-    
-    -` RESTful `架构风格概述: [https://juejin.im/entry/57c7a323a633bd006cfc1d84](https://juejin.im/entry/57c7a323a633bd006cfc1d84)
-    - `Restful API PHP`的学习视频: [https://www.imooc.com/learn/811](https://www.imooc.com/learn/811)
-* `Composer` 是`php`最为流行和使用最多的第三方扩展库
-    
-    > 推荐使用 阿里云`composer`镜像源 1分钟内快速同步，稳定可靠
-
-    如果你对 `Composer` 了解不够，请仔细阅读我收集的一些资料。
-    
-    - `composer` 入门中文文档: [https://docs.phpcomposer.com/](https://docs.phpcomposer.com/)
-    - `composer` 安装文档: [https://packagist.laravel-china.org/](https://packagist.laravel-china.org/)
-    - `composer` 更换国内源: [https://segmentfault.com/a/1190000019651993](https://segmentfault.com/a/1190000019651993)
-
-到此，相信你对TRR有了一定的了解了，对TRR项目需要用到的技术有个清晰的了解，如果你还是不太清楚，请继续在网上寻找资源学习吧，
-加油，明天会更美丽。
+未完待续·····
 
 ## 快速开始
 

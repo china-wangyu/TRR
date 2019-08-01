@@ -26,7 +26,11 @@ class Book
      */
     public function create()
     {
-        return json(['msg'=>'创建成功'],200);
+        return json([
+            'class'=>'application/api/controller/v1/Book.php',
+            'action'=>'create'
+        ],200);
+
     }
 
 }
