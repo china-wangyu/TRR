@@ -17,8 +17,8 @@
 ## TRR 是什么？
 
 **`TRR`** 是 **`ThinkPHP51 Reflection Restful API`**（注：API设计风格） 的字母第一个字符大写后拼接而来，
-从`ThinkPHP51 Reflection Restful API`全称可以看出来，
-这套接口框架设计主要围绕`反射`来做`Restful API接口设计`的。
+从**`ThinkPHP51 Reflection Restful API`**全称可以看出来，
+这套接口框架设计主要围绕**`反射`**来做**`Restful API接口设计`**的。
 
 ## TRR 可以做什么？
 
