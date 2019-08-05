@@ -15,7 +15,6 @@ namespace app\api\controller\v1;
 class Book
 {
     /**
-     * sdas
      * @doc('创建图书')
      * @route('','get')
      * @validate('CreateGroup.edit')
