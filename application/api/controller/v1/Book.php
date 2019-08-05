@@ -15,9 +15,9 @@ namespace app\api\controller\v1;
 class Book
 {
     /**
-     * sdas
      * @doc('创建图书')
-     * @route('','post')
+     * @route('','get')
+     * @validate('CreateGroup.edit')
      * @param('name','图书名称','require|graph|length:1,50')
      * @param('img','图书img','require|graph|length:1,16')
      * @return \think\response\Json
