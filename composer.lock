@@ -270,12 +270,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/china-wangyu/tp-anntation.git",
-                "reference": "2d58fc6160cee0c2f5ddddc7e99d238e8f470311"
+                "reference": "d545ff05c318f551e4da25986018311c50ffdde3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/china-wangyu/tp-anntation/zipball/2d58fc6160cee0c2f5ddddc7e99d238e8f470311",
-                "reference": "2d58fc6160cee0c2f5ddddc7e99d238e8f470311",
+                "url": "https://api.github.com/repos/china-wangyu/tp-anntation/zipball/d545ff05c318f551e4da25986018311c50ffdde3",
+                "reference": "d545ff05c318f551e4da25986018311c50ffdde3",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -304,7 +304,7 @@
                 }
             ],
             "description": "ThinkPHP5 的简易注解扩展，含注解路由（支持路由分组），注解参数验证（支持验证器和参数验证），注解Api文档生成等功能, 依赖`wangyu/tp-anntation`的框架[`TRR`](https://github.com/china-wangyu/TRR)",
-            "time": "2019-08-08T03:07:57+00:00"
+            "time": "2019-08-08T07:41:24+00:00"
         }
     ],
     "packages-dev": [],

@@ -158,7 +158,7 @@ header: 需要设置：`authorization`
     ```bash
     F:\project\open-source-object\Trr\2019-7-6\TRR [master ≡ +0 ~217 -0 !]
     λ  php think trr:doc
-    Successful. Output Document Successful . File Path ：api-md.html
+    Successful. Output Document Successful . File Path ：api-doc.html
     ```
  
 注意 ！

@@ -2,6 +2,7 @@
 /.vscode
 /vendor
 /runtime
-# api-md.md
+api-md.md
+api-md.html
 composer.lock
 backup-*
