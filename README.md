@@ -158,7 +158,7 @@ header: 需要设置：`authorization`
     ```bash
     F:\project\open-source-object\Trr\2019-7-6\TRR [master ≡ +0 ~217 -0 !]
     λ  php think trr:doc
-    Successful. Output Document Successful . File Path ：api-md.md
+    Successful. Output Document Successful . File Path ：api-md.html
     ```
  
 注意 ！
@@ -167,10 +167,12 @@ header: 需要设置：`authorization`
 
 ## 演示地址 
 
-* 官方运行示例: [演示站点](http://trr.ibs3.cn), [备用站点](http://47.240.11.136:8000/)
-* 官方`API Markdown文档`示例: [演示站点](http://trr.ibs3.cn/apiShow), [备用站点](http://47.240.11.136:8000/apiShow)
+* 官方运行示例: [演示站点](http://trr.ibs3.cn)
+* 官方`API Markdown文档`示例: [演示站点](http://trr.ibs3.cn/apiShow)
+* 官方`API Html文档`示例: [演示站点](http://trr.ibs3.cn/apiView)
 * 本地运行示例: http://127.0.0.1:8000/
 * 本地`API Markdown文档`示例: http://127.0.0.1:8000/apiShow
+* 本地`API Html文档`示例: http://127.0.0.1:8000/apiView
 
 ## 维护与提问
 

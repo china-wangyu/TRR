@@ -11,17 +11,23 @@ class Index extends Controller
         );
     }
 
+    public function hello($name = 'ThinkPHP5')
+    {
+        return 'hello,' . $name;
+    }
+
+    public function apiHtmlDemo()
+    {
+        return $this->display(file_get_contents(env('ROOT_PATH').'api-md.html'));
+
+    }
+
     public function apiMdDemo()
     {
         return $this->display(
             $this->html($this->mdToHtml(file_get_contents(env('ROOT_PATH').'api-md.md')))
         );
 
-    }
-
-    public function hello($name = 'ThinkPHP5')
-    {
-        return 'hello,' . $name;
     }
 
     private function mdToHtml(string $content){
