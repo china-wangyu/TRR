@@ -1,4 +1,4 @@
-# API Markdown 文档，源于[TRR](https://github.com/china-wangyu/TRR)的美好生活。
+# API Markdown 文档，源于[TRR](https://github.com/china-wangyu/TRR)的美好生活💑。
 
 ## `TOC`目录
 
@@ -68,7 +68,7 @@
 
 - [url] : `/v1/book`
 
-- [method] : `post`
+- [method] : `get`
 
 - [params] : `请求参数文档`
 
@@ -87,4 +87,6 @@
    ```json5
     
    ```
+
+ 感谢🙏使用[TRR](https://github.com/china-wangyu/TRR)，祝你生活美满～
 

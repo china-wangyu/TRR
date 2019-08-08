@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e018589b3dd725a50083c41a208f545f",
+    "content-hash": "416643da68f50bff45e1bcc275548a32",
     "packages": [
         {
             "name": "erusev/parsedown",
@@ -162,16 +162,16 @@
         },
         {
             "name": "topthink/framework",
-            "version": "v5.1.37.1",
+            "version": "v5.1.38",
             "source": {
                 "type": "git",
                 "url": "https://github.com/top-think/framework.git",
-                "reference": "05eecd121d18d6705aaa10aa44fcdf7c14da4d0b"
+                "reference": "d867ebe035dcd588712b9544e2086dcbd58722ea"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/top-think/framework/zipball/05eecd121d18d6705aaa10aa44fcdf7c14da4d0b",
-                "reference": "05eecd121d18d6705aaa10aa44fcdf7c14da4d0b",
+                "url": "https://api.github.com/repos/top-think/framework/zipball/d867ebe035dcd588712b9544e2086dcbd58722ea",
+                "reference": "d867ebe035dcd588712b9544e2086dcbd58722ea",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -215,7 +215,7 @@
                 "orm",
                 "thinkphp"
             ],
-            "time": "2019-05-28T06:57:29+00:00"
+            "time": "2019-08-08T04:14:04+00:00"
         },
         {
             "name": "topthink/think-installer",
@@ -266,16 +266,16 @@
         },
         {
             "name": "wangyu/tp-anntation",
-            "version": "dev-master",
+            "version": "dev-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/china-wangyu/tp-anntation.git",
-                "reference": "c44f3d86f88423b1ca2e80db161cf3f5dc37f8f0"
+                "reference": "d545ff05c318f551e4da25986018311c50ffdde3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/china-wangyu/tp-anntation/zipball/c44f3d86f88423b1ca2e80db161cf3f5dc37f8f0",
-                "reference": "c44f3d86f88423b1ca2e80db161cf3f5dc37f8f0",
+                "url": "https://api.github.com/repos/china-wangyu/tp-anntation/zipball/d545ff05c318f551e4da25986018311c50ffdde3",
+                "reference": "d545ff05c318f551e4da25986018311c50ffdde3",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -304,7 +304,7 @@
                 }
             ],
             "description": "ThinkPHP5 的简易注解扩展，含注解路由（支持路由分组），注解参数验证（支持验证器和参数验证），注解Api文档生成等功能, 依赖`wangyu/tp-anntation`的框架[`TRR`](https://github.com/china-wangyu/TRR)",
-            "time": "2019-08-05T05:12:43+00:00"
+            "time": "2019-08-08T07:41:24+00:00"
         }
     ],
     "packages-dev": [],
