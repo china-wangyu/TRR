@@ -1,6 +1,6 @@
 <h1 align="center">
   <a href="https://github.com/china-wangyu/TRR">
-   <img src="http://119.23.230.16:9000/data/User/admin/home/pictures/TRR_logo.png" alt="TRR" width="600"/>
+   <img src="https://china-wangyu.github.io//TRR/TRR-logo.png" alt="TRR" width="600"/>
   </a>
   <br>
   TRR
@@ -41,6 +41,8 @@
 
 
 ## 使用文档
+
+> 标注： `master` 分支属于 `TRR-v0.0.2`
 
 TRR-v0.0.1文档：[👉 点我了解](https://china-wangyu.github.io/views/php/trr/v0.0.1/)
 
@@ -195,13 +197,14 @@ header: 需要设置：`authorization`
 加【TRR 官方群】QQ群: `860613750`
 
 
+
 ### 请我喝茶
 
 如果你觉得本项目帮助到你，想请作者**喝杯茶** , 请扫码打赏任意金额
 
 <p align="center">
     <img width="300"
-    src='http://119.23.230.16:9000/data/User/admin/home/pictures/%E6%94%AF%E4%BB%98%E5%AE%9D%E6%94%B6%E6%AC%BE%E7%A0%81.jpg'
+    src='https://china-wangyu.github.io//TRR/打赏/alipay.jpg'
      alt='请作者喝茶' />
 </p>
     
