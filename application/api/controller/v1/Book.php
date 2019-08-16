@@ -1,15 +1,13 @@
 <?php
 /** Created By wene<china_wangyu@aliyun.com>, Data: 2019/7/3 */
 
-
 namespace app\api\controller\v1;
-
 
 /**
  * Class Book
  * @doc(图书类)
  * @group('v1/book')
- * @middleware('Validate')
+ * @middleware('Auth')
  * @package app\api\controller\v1
  */
 class Book
@@ -27,9 +25,9 @@ class Book
     public function create()
     {
         return json([
-            'class'=>'application/api/controller/v1/Book.php',
-            'action'=>'create'
-        ],200);
+            'class' => 'application/api/controller/v1/Book.php',
+            'action' => 'create',
+        ], 200);
 
     }
 
