@@ -4,6 +4,8 @@
 
 namespace app\http\middleware;
 
+use app\lib\token\Token;
+
 class Auth
 {
     /**
@@ -14,9 +16,7 @@ class Auth
      */
     public function handle($request, \Closure $next)
     {
-        if (request()->controller() != 'Auth'){
-
-        }
+        Token::verification();
 
         return $next($request);
     }
