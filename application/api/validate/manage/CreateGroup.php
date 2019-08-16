@@ -25,7 +25,7 @@ class CreateGroup extends \WangYu\validate\Validate
     public function sceneEdit()
     {
         return $this->only(['name','age'])
-            ->append('name', 'min:5')
+            ->append('name', 'min:1')
             ->remove('age', 'between')
             ->append('age', 'require|max:100');
     }

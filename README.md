@@ -176,19 +176,8 @@ header: 需要设置：`authorization`
 * 本地`API Markdown文档`示例: http://127.0.0.1:8000/apiShow
 * 本地`API Html文档`示例: http://127.0.0.1:8000/apiView
 
-## 维护与提问
 
-### 更新
-
-由于目前TRR目前还处在不断迭代更新阶段，TP5.1版本也在持续跟进，所以本文档的内容也会随着适配的进度而增加或者调整。
-
-项目更新记录，可以在`CHANGELOG.md`查看
-
-### 完善
-
-局限于个人技术水平和写作能力，如果教程中有哪些地方读者觉得不对或者看不懂需要再讲仔细些可以随时提出。
-
-### 催更、提问与交流
+## 催更、提问与交流
 
 读者对本教程或者GitHub项目有任何疑问、建议都可以在作者GitHub仓库提个[issues](https://github.com/china-wangyu/TRR/issues)  
 
@@ -197,23 +186,13 @@ header: 需要设置：`authorization`
 加【TRR 官方群】QQ群: `860613750`
 
 
+## 下阶段开发计划
 
-### 请我喝茶
+- [ ] 注解接口自检（接口一键验证）
+- [x] 注解接口文档生成
+- [x] 注解验证器场景
+- [x] 注解验证器
+- [x] 注解路由分组
+- [x] 注解中间件
+- [x] 注解路由
 
-如果你觉得本项目帮助到你，想请作者**喝杯茶** , 请扫码打赏任意金额
-
-<p align="center">
-    <img width="300"
-    src='https://china-wangyu.github.io//TRR/打赏/alipay.jpg'
-     alt='请作者喝茶' />
-</p>
-    
-## 版权信息
-
-TRR 遵循 MIT 开源协议发布，并提供免费使用。
-
-本项目包含的第三方源码和二进制文件之版权信息另行标注。
-
-版权所有Copyright © 2006-2019 by TRR
-
-All rights reserved。
