@@ -16,10 +16,7 @@ class Auth
      */
     public function handle($request, \Closure $next)
     {
-        if (!empty($request->routeInfo()['option']['middleware'])
-            && in_array('Auth', $request->routeInfo()['option']['middleware'])) {
-            Token::verification();
-        }
+        Token::verification();
         return $next($request);
     }
 }
